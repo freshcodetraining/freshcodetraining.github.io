@@ -1,0 +1,122 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex index.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^developer-zp$ page19022422.html [NC]
+RewriteRule ^developer-zp/$ page19022422.html [NC]
+
+RewriteRule ^ru$ page19349426.html [NC]
+RewriteRule ^ru/$ page19349426.html [NC]
+
+RewriteRule ^developer-dp$ page19609857.html [NC]
+RewriteRule ^developer-dp/$ page19609857.html [NC]
+
+RewriteRule ^management$ page19022270.html [NC]
+RewriteRule ^management/$ page19022270.html [NC]
+
+RewriteRule ^community$ page19182897.html [NC]
+RewriteRule ^community/$ page19182897.html [NC]
+
+RewriteRule ^reviews$ page19026287.html [NC]
+RewriteRule ^reviews/$ page19026287.html [NC]
+
+RewriteRule ^contacts$ page19026314.html [NC]
+RewriteRule ^contacts/$ page19026314.html [NC]
+
+RewriteRule ^thankyou$ page19897982.html [NC]
+RewriteRule ^thankyou/$ page19897982.html [NC]
+
+RewriteRule ^thankyou/management$ page19921545.html [NC]
+RewriteRule ^thankyou/management/$ page19921545.html [NC]
+
+RewriteRule ^thanksforrequest-mg$ page19899033.html [NC]
+RewriteRule ^thanksforrequest-mg/$ page19899033.html [NC]
+
+RewriteRule ^thankyou/js/dp$ page20063916.html [NC]
+RewriteRule ^thankyou/js/dp/$ page20063916.html [NC]
+
+RewriteRule ^thank-you-page-main-dp$ page20135306.html [NC]
+RewriteRule ^thank-you-page-main-dp/$ page20135306.html [NC]
+
+RewriteRule ^main/form$ page20071046.html [NC]
+RewriteRule ^main/form/$ page20071046.html [NC]
+
+RewriteRule ^developer-zp/ru$ page19497038.html [NC]
+RewriteRule ^developer-zp/ru/$ page19497038.html [NC]
+
+RewriteRule ^developer-dp/ru$ page19610479.html [NC]
+RewriteRule ^developer-dp/ru/$ page19610479.html [NC]
+
+RewriteRule ^management/ru$ page19353053.html [NC]
+RewriteRule ^management/ru/$ page19353053.html [NC]
+
+RewriteRule ^community/ru$ page19353657.html [NC]
+RewriteRule ^community/ru/$ page19353657.html [NC]
+
+RewriteRule ^reviews/ru$ page19354153.html [NC]
+RewriteRule ^reviews/ru/$ page19354153.html [NC]
+
+RewriteRule ^contacts/ru$ page19354492.html [NC]
+RewriteRule ^contacts/ru/$ page19354492.html [NC]
+
+RewriteRule ^thankyou/ru$ page19893189.html [NC]
+RewriteRule ^thankyou/ru/$ page19893189.html [NC]
+
+RewriteRule ^thankyou/management/ru$ page19921637.html [NC]
+RewriteRule ^thankyou/management/ru/$ page19921637.html [NC]
+
+RewriteRule ^thanksforrequest-mg/ru$ page19899037.html [NC]
+RewriteRule ^thanksforrequest-mg/ru/$ page19899037.html [NC]
+
+RewriteRule ^thankyou/js/dp/ru$ page20064192.html [NC]
+RewriteRule ^thankyou/js/dp/ru/$ page20064192.html [NC]
+
+RewriteRule ^main/form/ru$ page20071262.html [NC]
+RewriteRule ^main/form/ru/$ page20071262.html [NC]
+
+RewriteRule ^thank-you-page-main-dp-ru$ page20135349.html [NC]
+RewriteRule ^thank-you-page-main-dp-ru/$ page20135349.html [NC]
+
+RewriteRule ^developer-distance-course$ page21902084.html [NC]
+RewriteRule ^developer-distance-course/$ page21902084.html [NC]
+
+RewriteRule ^developer-distance-course-ru$ page21905408.html [NC]
+RewriteRule ^developer-distance-course-ru/$ page21905408.html [NC]
+
+RewriteRule ^full-stack-js-developer-choice$ page21905773.html [NC]
+RewriteRule ^full-stack-js-developer-choice/$ page21905773.html [NC]
+
+RewriteRule ^privacy_policy/ua$ page25120868.html [NC]
+RewriteRule ^privacy_policy/ua/$ page25120868.html [NC]
+
+RewriteRule ^full-stack-js-developer-choice-ru$ page21906106.html [NC]
+RewriteRule ^full-stack-js-developer-choice-ru/$ page21906106.html [NC]
+
+RewriteRule ^thankyou-js-online$ page21969950.html [NC]
+RewriteRule ^thankyou-js-online/$ page21969950.html [NC]
+
+RewriteRule ^privacy_policy/ru$ page25116205.html [NC]
+RewriteRule ^privacy_policy/ru/$ page25116205.html [NC]
+
+RewriteRule ^thankyou-js-online-ru$ page21970032.html [NC]
+RewriteRule ^thankyou-js-online-ru/$ page21970032.html [NC]
+
+RewriteRule ^thanksforrequest-js/ru$ page25764205.html [NC]
+RewriteRule ^thanksforrequest-js/ru/$ page25764205.html [NC]
+
+RewriteRule ^thanksforrequest-js$ page25765017.html [NC]
+RewriteRule ^thanksforrequest-js/$ page25765017.html [NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild3364-3232-4366-b763-376435336135/favicon_2.ico [R=302,L]
+
